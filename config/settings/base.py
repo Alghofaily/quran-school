@@ -24,11 +24,10 @@ environ.Env.read_env(BASE_DIR / ".env")
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env("SECRET_KEY")
+# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
 ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=[])
-# SECRET_KEY = "django-insecure-#i6k#z$5(ngwjh7@#zbl8j32b5-yly1ihl6tv$n93&@1feha2j"
 
-# SECURITY WARNING: don't run with debug turned on in production!
 
 AUTH_USER_MODEL = "accounts.User"
 
